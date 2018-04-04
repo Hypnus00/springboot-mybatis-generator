@@ -14,12 +14,14 @@ public class Country {
     /**
      * 名称
      */
-    private String countryname;
+    @Column(name = "country_name")
+    private String countryName;
 
     /**
      * 代码
      */
-    private String countrycode;
+    @Column(name = "country_code")
+    private String countryCode;
 
     /**
      * 获取主键
@@ -42,36 +44,36 @@ public class Country {
     /**
      * 获取名称
      *
-     * @return countryname - 名称
+     * @return country_name - 名称
      */
-    public String getCountryname() {
-        return countryname;
+    public String getCountryName() {
+        return countryName;
     }
 
     /**
      * 设置名称
      *
-     * @param countryname 名称
+     * @param countryName 名称
      */
-    public void setCountryname(String countryname) {
-        this.countryname = countryname;
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
     }
 
     /**
      * 获取代码
      *
-     * @return countrycode - 代码
+     * @return country_code - 代码
      */
-    public String getCountrycode() {
-        return countrycode;
+    public String getCountryCode() {
+        return countryCode;
     }
 
     /**
      * 设置代码
      *
-     * @param countrycode 代码
+     * @param countryCode 代码
      */
-    public void setCountrycode(String countrycode) {
-        this.countrycode = countrycode;
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
     }
 }

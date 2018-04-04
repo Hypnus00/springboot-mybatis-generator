@@ -22,7 +22,8 @@ public class UserInfo {
     /**
      * 用户类型
      */
-    private String usertype;
+    @Column(name = "user_type")
+    private String userType;
 
     /**
      * 是否可用
@@ -32,7 +33,8 @@ public class UserInfo {
     /**
      * 真实姓名
      */
-    private String realname;
+    @Column(name = "real_name")
+    private String realName;
 
     /**
      * QQ
@@ -99,19 +101,19 @@ public class UserInfo {
     /**
      * 获取用户类型
      *
-     * @return usertype - 用户类型
+     * @return user_type - 用户类型
      */
-    public String getUsertype() {
-        return usertype;
+    public String getUserType() {
+        return userType;
     }
 
     /**
      * 设置用户类型
      *
-     * @param usertype 用户类型
+     * @param userType 用户类型
      */
-    public void setUsertype(String usertype) {
-        this.usertype = usertype;
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 
     /**
@@ -135,19 +137,19 @@ public class UserInfo {
     /**
      * 获取真实姓名
      *
-     * @return realname - 真实姓名
+     * @return real_name - 真实姓名
      */
-    public String getRealname() {
-        return realname;
+    public String getRealName() {
+        return realName;
     }
 
     /**
      * 设置真实姓名
      *
-     * @param realname 真实姓名
+     * @param realName 真实姓名
      */
-    public void setRealname(String realname) {
-        this.realname = realname;
+    public void setRealName(String realName) {
+        this.realName = realName;
     }
 
     /**
